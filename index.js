@@ -333,15 +333,24 @@
 //     };
 // }
 
-let account = createBankAccount(1000);
-account.deposit(500);
-account.checkBalance(); // 1500
-function makemultiplier(x){
-   return function(num){
-        return num*x;
-    }
-}
-let double=makemultiplier(2);
-let triple=makemultiplier(3);
-console.log(double(5));
-console.log(triple(5));
+// let account = createBankAccount(1000);
+// account.deposit(500);
+// account.checkBalance(); // 1500
+// function makemultiplier(x){
+//    return function(num){
+//         return num*x;
+//     }
+// }
+// let double=makemultiplier(2);
+// let triple=makemultiplier(3);
+// console.log(double(5));
+// console.log(triple(5));
+// Ek function createBankAccount(initialBalance) banao jo ek object return
+//  kare with 2 functions — deposit(amount) aur checkBalance(). 
+//  Balance variable closure ke through private rehna chahiye
+//   (bahar se directly access na ho sake).
+// function createBankAccount(initialBalance){
+//     return {
+        
+//     }
+// }
