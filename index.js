@@ -354,3 +354,12 @@
         
 //     }
 // }
+// let myPromise = new Promise((resolve, reject) => {
+//   let success = true;
+
+//   if (success) {
+//     resolve("Work done!");
+//   } else {
+//     reject("Error occurred!");
+//   }
+// });
