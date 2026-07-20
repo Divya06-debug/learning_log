@@ -350,9 +350,16 @@
 //  Balance variable closure ke through private rehna chahiye
 //   (bahar se directly access na ho sake).
 // function createBankAccount(initialBalance){
+//     let balance=initialBalance;
 //     return {
+//         deposit:function(amount){
+//             balance+=amount;
+//         },
+//         checkbalance: function(){
+//             console.log(balance);
+//         }
         
-//     }
+//     };
 // }
 // let myPromise = new Promise((resolve, reject) => {
 //   let success = true;
@@ -363,3 +370,32 @@
 //     reject("Error occurred!");
 //   }
 // });
+// console.log("1");
+
+// setTimeout(() => {
+//     console.log("2");
+// }, 2000);   // 2000ms = 2 second baad chalega
+
+// console.log("3");
+// Practice Question
+
+// Ek function getMessage() banao jo ek Promise return kare. Us Promise ke andar setTimeout use karo — 1.5 second (1500ms) baad resolve("Welcome to async JS!") call ho.
+
+// Phir ek async function showMessage() banao jo:
+
+// getMessage() ko await kare
+// Result ko console me print kare
+
+// Aakhir me showMessage() ko call karo.
+function getMessage() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve("Welcome to async js"), 1500);
+    });
+}
+
+async function showMessage() {
+    let result = await getMessage();
+    console.log(result);
+}
+
+showMessage();
