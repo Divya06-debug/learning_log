@@ -8,4 +8,4 @@ Daily practice while learning JavaScript and Django.
 
 ## Progress
 - Started: July 2026
-- Currently learning: JS:Functions and scope
+- Currently learning: JS:React😁
