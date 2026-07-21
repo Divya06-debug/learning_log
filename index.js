@@ -387,15 +387,15 @@
 // Result ko console me print kare
 
 // Aakhir me showMessage() ko call karo.
-function getMessage() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve("Welcome to async js"), 1500);
-    });
-}
+// function getMessage() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => resolve("Welcome to async js"), 1500);
+//     });
+// }
 
-async function showMessage() {
-    let result = await getMessage();
-    console.log(result);
-}
+// async function showMessage() {
+//     let result = await getMessage();
+//     console.log(result);
+// }
 
-showMessage();
+// showMessage();
